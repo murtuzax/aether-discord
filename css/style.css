@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/images/background.png");
+    background-position: center;
+    object-fit: cover;
+    font-family: "Space Grotesk", sans-serif;
+    position: relative;
+}
+
+.land {
+    position: fixed;
+    bottom: -100px;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.socrates {
+    position:fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.leonardo {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+}
+
+header {
+    margin: 0 auto 0 auto;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #0F172A;
+    transition: scale 0.2s ease;
+}
+
+.logo:hover {
+    scale: 1.1;
+}
+
+.link {
+    color: #0F172A;
+    text-decoration: none;
+}
+
+.section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 140px 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tag {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border:1px solid rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    animation: fadeUp 0.5s ease both;
+    animation-delay: 0.2s;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.25s;
+}
+
+.description {
+    margin-bottom: 18px;
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.35s;
+}
+
+.button {
+    background-color: #0F172A;
+    color: white;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: opacity 0.2s ease both;
+    animation: fadeUp 0.7s ease;
+    animation-delay: 0.4s;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media(max-width:768px) {
+    .leonardo {
+        left: -150px;
+    }
+    .socrates {
+        right: -180px;
+    }
+}
